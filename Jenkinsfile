@@ -5,6 +5,7 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 dir('backend') {
+                    checkout scm
                     sh 'npm install'
                 }
             }
