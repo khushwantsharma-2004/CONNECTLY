@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-            steps {
-                echo 'Code cloning ho gaya (already done by Jenkins if connected to GitHub)'
-            }
-        }
-
         stage('Install Backend Dependencies') {
             steps {
                 dir('backend') {
