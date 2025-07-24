@@ -19,8 +19,8 @@ app.use("/api/v1/users",userRoutes);
 const start=async()=>{
     const connectionDb=await mongoose.connect("mongodb+srv://dbUser:changeemail@cluster0.fni5j.mongodb.net/");
     console.log(`mongodb connected DB host: ${connectionDb.connection.host}`);
-    server.listen(5173,()=>{
-        console.log("listening on port 5173");
+    server.listen(8000,()=>{
+        console.log("listening on port 8000");
     });
 };
 start();
